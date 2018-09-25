@@ -46,9 +46,11 @@
     top:65.5%;
     left:48%;
     display:block;
-    animation: atplus-green-move 1s;
+    animation: atplus-green-move 0.2s;
     -webkit-animation: atplus-green-move 0.2s;
 }
+
+
 
 #at-plus-container #at_plus_green img{
     position: relative;
@@ -56,6 +58,26 @@
     left:10%;
 }
 
+@keyframes maskmove{
+    from{top:initial;}
+    to{
+        position: absolute;
+        top:60%;
+        left:40%
+    }
+}
+
+#control-ring-container li{
+    position: absolute;
+    top:70%;
+    left:50%;
+}
+
+.maskbutton{
+    display: block;
+    animation: maskmove 0.2s;
+    -webkit-animation: maskmove 0.2s;
+}
 
 
 #control-ring .control-img{
@@ -65,7 +87,11 @@
     border-radius: 50%;
     background-color: grey;
     padding: 0px;
-    
+    display:none;
+}
+
+#control-ring{
+    list-style: none;
 }
 
 #control-ring .control-img img{
@@ -74,12 +100,24 @@
     left:22%;
 }
 
+
+
+#control-ring-container {
+    display: none;
+}
+
 #control-ring .unread{
-    position: relative;
-    background-color: red;
-    border-radius: 100%;
-    font-weight: bold;
+    background-color: rgb(238, 128, 128);
+    border-radius: 50%;
+    display: inline-block;   
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
     color:white;
+    position: relative;
+    text-align: center;
+    top:-44px;
+    left:26px;
 }
 
 .mask button,.history button,.message button,.unread,.setting button,.sign button{
