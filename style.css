@@ -1,12 +1,12 @@
 
 #at-plus-container #at_plus_white{
+    
     width: 32px;
     height: 32px;
     border-radius: 50%;
     text-align: center;
     margin: 0%;
     padding: 0%;
-    clear: both;
     float: left;
     background-color: grey;
     position: absolute;
@@ -56,14 +56,30 @@
     left:10%;
 }
 
-.mask button,.history button,.message button,.unread,.setting button,.sign button img{
+
+
+#control-ring .control-img{
+    height: 40px;
+    width: 40px;
     position: relative;
-    top:20%;
-    left:2%;  
     border-radius: 50%;
     background-color: grey;
-    width: 32px;
-    height: 32px;
+    padding: 0px;
+    
+}
+
+#control-ring .control-img img{
+    position: relative;
+    top:22%;
+    left:22%;
+}
+
+#control-ring .unread{
+    position: relative;
+    background-color: red;
+    border-radius: 100%;
+    font-weight: bold;
+    color:white;
 }
 
 .mask button,.history button,.message button,.unread,.setting button,.sign button{
