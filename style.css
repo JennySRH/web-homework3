@@ -1,0 +1,74 @@
+
+#at-plus-container #at_plus_white{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    clear: both;
+    float: left;
+    background-color: grey;
+    position: absolute;
+    top:70%;
+    left:50%;
+}
+
+#at-plus-container #at_plus_white img{
+    position: relative;
+    top:20%;
+    left:2%;
+}
+
+
+#at_plus:hover #at_plus_white{
+    display: none;
+}
+
+#at_plus #at_plus_green{
+    display: none;
+}
+
+@keyframes atplus-green-move{
+    0% {transform: scale(0.6);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}
+
+#at_plus:hover #at_plus_green{
+    width: 85px;
+    height: 85px;
+    background-color: rgba(48, 63, 159, 1);
+    border-radius: 50%;
+    position: absolute;
+    top:65.5%;
+    left:48%;
+    display:block;
+    animation: atplus-green-move 1s;
+    -webkit-animation: atplus-green-move 0.2s;
+}
+
+#at-plus-container #at_plus_green img{
+    position: relative;
+    top:20%;
+    left:10%;
+}
+
+.mask button,.history button,.message button,.unread,.setting button,.sign button img{
+    position: relative;
+    top:20%;
+    left:2%;  
+    border-radius: 50%;
+    background-color: grey;
+    width: 32px;
+    height: 32px;
+}
+
+.mask button,.history button,.message button,.unread,.setting button,.sign button{
+    border-radius: 50%;
+    background-color: grey;
+    width: 32px;
+    height: 32px;
+}
