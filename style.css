@@ -34,7 +34,7 @@
 }
 
 @keyframes atplus-green-move{
-    0% {transform: scale(0.6);
+    0% {transform: scale(0.5);
     }
     100%{
         transform: scale(1.0);
@@ -47,11 +47,13 @@
     background-color: rgba(48, 63, 159, 1);
     border-radius: 50%;
     position: absolute;
-    top:65.5%;
-    left:48%;
+    top:-24px;
+    left:-24px;
     display:block;
-    animation: atplus-green-move 0.2s;
-    -webkit-animation: atplus-green-move 0.2s;
+    animation: atplus-green-move 0.3s;
+    -webkit-animation: atplus-green-move 0.3s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
 
@@ -64,61 +66,64 @@
 
 @keyframes maskmove{
 
-    0%{position: absolute;
-        top:70%;
-        left:50%}
+    0%{ 
+        position: absolute;
+        top:0;
+        left:0;}
     100%{
         position: absolute;
-        top:60%;
-        left:40%
+        top:-60px;
+        left:-80px;
     }
 }
 
 @keyframes historymove{
 
-    0%{position: absolute;
-        top:70%;
-        left:50%}
+    0%{
+        position: absolute;
+        top:0px;
+        left:0px;
+    }
     100%{
         position: absolute;
-        top:50%;
-        left:40%
+        top:-10px;
+        left:-100px;
     }
 }
 
 @keyframes messagemove{
 
     0%{position: absolute;
-        top:70%;
-        left:50%}
+        top:0px;
+        left:0px;}
     100%{
         position: absolute;
-        top:40%;
-        left:40%
+        top:50px;
+        left:-83px;
     }
 }
 
 @keyframes settingmove{
 
     0%{position: absolute;
-        top:70%;
-        left:50%}
+        top:0;
+        left:0%}
     100%{
         position: absolute;
-        top:30%;
-        left:40%
+        top:80px;
+        left:-30px;
     }
 }
 
 @keyframes signmove{
 
     0%{position: absolute;
-        top:70%;
-        left:50%}
+        top:0;
+        left:0%}
     100%{
         position: absolute;
-        top:20%;
-        left:40%
+        top:78px;
+        left:28px;
     }
 }
 
@@ -152,40 +157,47 @@
 
 .at_plus:hover .maskbutton{
     display: block;
-    top:40%;
-    left:40%;
+    animation: maskmove 1s;
+    -webkit-animation: maskmove 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
 .at_plus:hover .historybutton{
     display: block;
     animation: historymove 1s;
     -webkit-animation: historymove 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
 .at_plus:hover .messagebutton{
     display: block;
     animation: messagemove 1s;
     -webkit-animation: messagemove 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
 .at_plus:hover .settingbutton{
     display: block;
     animation: settingmove 1s;
     -webkit-animation: settingmove 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
 .at_plus:hover .signbutton{
     display: block;
     animation: signmove 1s;
     -webkit-animation: signmove 1s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
 .at_plus .maskbutton{
     display: none;
-    transition-property: position;
-    transition-duration: 1s;
-    -webkit-transition-property: position;
-    -webkit-transition-duration: 1s;
+
 }
 
 .at_plus .historybutton{
@@ -216,6 +228,10 @@
     text-align: center;
     top:-44px;
     left:26px;
+}
+
+#bottom-positioner #info-bar{
+    display: none;
 }
 
 .mask button,.history button,.message button,.unread,.setting button,.sign button{
