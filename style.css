@@ -23,7 +23,6 @@
 }
 
 
-
 .at_plus:hover .at_plus_white{
     display: none;
 }
@@ -37,7 +36,7 @@
     0% {transform: scale(0.5);
     }
     100%{
-        transform: scale(1.0);
+        transform: scale(0.8);
     }
 }
 
@@ -230,9 +229,7 @@
     left:26px;
 }
 
-#bottom-positioner #info-bar{
-    display: none;
-}
+
 
 .mask button,.history button,.message button,.unread,.setting button,.sign button{
     border-radius: 50%;
@@ -240,3 +237,121 @@
     width: 32px;
     height: 32px;
 }
+
+
+
+@keyframes infomoveback{
+    0%{
+        position: absolute;
+        top:-150px;
+        left:-40px;
+        transform: scale(1.0);
+    }
+    100%{ position: absolute;
+        top:-50px;
+        left:-40px;
+        transform: scale(0.2);  
+        display: none;  
+    }
+    
+}
+
+#bottom-positioner #info-bar{
+    display: none;
+}
+
+.info ul li{
+    list-style: none;
+}
+
+#info-bar{
+    position: absolute;
+    bottom: 0px;
+    background-color: grey;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+}
+
+#info-bar .page_user{
+    position: relative;
+    top:-5px;
+    left:-5px;
+
+}
+
+#info-bar .page_user #page_user_number{
+    color:white;
+    font-size: 20px;
+    position: relative;
+    left:10px;    
+    top:-7px;
+}
+
+#info-bar .page_comment{
+    position: relative;
+    top:-5px;
+    left:-10px;
+}
+
+#info-bar .page_comment span{
+    color:white;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    left:12px;    
+    top:-4px;
+}
+
+#info-bar .mine_posted{
+    position: relative;
+    top:-5px;
+    left:-19px;
+}
+
+#info-bar .mine_posted span{
+    color:#079E6E;
+    font-weight:bold;
+    font-size: 20px;
+    position: relative;
+    left:3px;    
+    top:-4px;
+}
+
+#info-bar .mine_like{
+    position: relative;
+    top:-35px;
+    left:24px;
+} 
+
+#info-bar .mine_like span{
+    color:#079E6E;
+    font-weight:bold;
+    font-size: 20px;
+    position: relative;
+    left:4px;    
+    top:-4px;
+}
+
+@keyframes infomove{
+    0%{ position: absolute;
+        top:-50px;
+        left:-40px;
+        transform: scale(0.2);    
+    }
+    100%{
+        position: absolute;
+        top:-150px;
+        left:-40px;
+        transform: scale(1.0);
+    }
+}
+
+.at_plus:hover #bottom-positioner #info-bar{
+    display: block;
+    animation: infomove 1s;
+    -webkit-animation: infomove 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
