@@ -186,9 +186,6 @@
     
 }
 
-#bottom-positioner #info-bar{
-    display: none;
-}
 
 .info ul li{
     list-style: none;
@@ -263,25 +260,21 @@
     top:-4px;
 }
 
-@keyframes infomove{
-    0%{ position: absolute;
-        top:-50px;
-        left:-40px;
-        transform: scale(0.2);    
-    }
-    100%{
-        position: absolute;
-        top:-150px;
-        left:-40px;
-        transform: scale(1.0);
-    }
-}
 
 .at_plus:hover #bottom-positioner #info-bar{
-    display: block;
-    animation: infomove 1s;
-    -webkit-animation: infomove 1s;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
+    opacity: 1;
+    transform: scale(1.0);
+    position: relative;
+    top:-240px;
+    left:-15px;
 }
 
+
+.at_plus #bottom-positioner #info-bar{
+    opacity: 0;
+    transform: scale(0.2);
+    position: relative;
+    top:-100px;
+    left:-40px;
+
+}
