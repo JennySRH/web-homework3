@@ -1,140 +1,51 @@
-.at_plus{
-    position: absolute;
-    top:70%;
-    left:50%;
+*{
+    transition: all 1s ease 0.3s;
+    -webkit-transition: all 1s ease 0.3s;
 }
 
-#at-plus-container .at_plus_white{
+.at_plus{
+    position: absolute;
+    width:32px;
+    height: 32px;
+    margin: 0px;
+    left:50%;
+    top: 80%;
+}
+
+.at_plus_button{
+    background-image:url('assets/images/atplus_white.png');
+    background-color: grey;
+    background-position: 3px;
+    background-repeat: no-repeat;
+    background-size: 84% 60%;
     width: 32px;
     height: 32px;
     border-radius: 50%;
     text-align: center;
     margin: 0%;
     padding: 0%;
-    float: left;
+    display:inline-block;
     background-color: grey;
 
 }
 
-#at-plus-container .at_plus_white img{
-    position: relative;
-    top:20%;
-    left:2%;
-}
 
 
-.at_plus:hover .at_plus_white{
-    display: none;
-}
-
-.at_plus .at_plus_green{
-
-    display: none;
-}
-
-@keyframes atplus-green-move{
-    0% {transform: scale(0.5);
-    }
-    100%{
-        transform: scale(0.8);
-    }
-}
-
-.at_plus:hover .at_plus_green{
+.at_plus:hover .at_plus_button{
+    background-image: url('assets/images/atplus_green.png');
+    background-position: 6px;
     width: 85px;
     height: 85px;
+    background-size: 84% 60%;
     background-color: rgba(48, 63, 159, 1);
     border-radius: 50%;
-    position: absolute;
-    top:-24px;
-    left:-24px;
-    display:block;
-    animation: atplus-green-move 0.3s;
-    -webkit-animation: atplus-green-move 0.3s;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-}
-
-
-
-#at-plus-container .at_plus_green img{
-    position: relative;
-    top:20%;
-    left:10%;
-}
-
-@keyframes maskmove{
-
-    0%{ 
-        position: absolute;
-        top:0;
-        left:0;}
-    100%{
-        position: absolute;
-        top:-60px;
-        left:-80px;
-    }
-}
-
-@keyframes historymove{
-
-    0%{
-        position: absolute;
-        top:0px;
-        left:0px;
-    }
-    100%{
-        position: absolute;
-        top:-10px;
-        left:-100px;
-    }
-}
-
-@keyframes messagemove{
-
-    0%{position: absolute;
-        top:0px;
-        left:0px;}
-    100%{
-        position: absolute;
-        top:50px;
-        left:-83px;
-    }
-}
-
-@keyframes settingmove{
-
-    0%{position: absolute;
-        top:0;
-        left:0%}
-    100%{
-        position: absolute;
-        top:80px;
-        left:-30px;
-    }
-}
-
-@keyframes signmove{
-
-    0%{position: absolute;
-        top:0;
-        left:0%}
-    100%{
-        position: absolute;
-        top:78px;
-        left:28px;
-    }
+    display:inline-block;
 }
 
 
 #control-ring-container li{
-    position: absolute;
-    top:70%;
-    left:50%;
     list-style: none;
 }
-
-
 
 
 #control-ring .control-img{
@@ -148,7 +59,7 @@
 
 
 
-#control-ring .control-img img{
+.at_plus #control-ring .control-img img{
     position: relative;
     top:22%;
     left:22%;
@@ -156,62 +67,81 @@
 
 .at_plus:hover .maskbutton{
     display: block;
-    animation: maskmove 1s;
-    -webkit-animation: maskmove 1s;
-    animation-fill-mode:forwards;
-    -webkit-animation-fill-mode: forwards;
+    opacity: 1;
+    position: relative;
+    top:-80px;
+    left:-110px;
 }
 
 .at_plus:hover .historybutton{
     display: block;
-    animation: historymove 1s;
-    -webkit-animation: historymove 1s;
-    animation-fill-mode:forwards;
-    -webkit-animation-fill-mode: forwards;
+    opacity: 1;
+    position: relative;
+    top:-60px;
+    left:-135px;
 }
 
 .at_plus:hover .messagebutton{
     display: block;
-    animation: messagemove 1s;
-    -webkit-animation: messagemove 1s;
-    animation-fill-mode:forwards;
-    -webkit-animation-fill-mode: forwards;
+    opacity: 1;
+    position: relative;
+    top:-40px;
+    left:-120px;
 }
 
 .at_plus:hover .settingbutton{
     display: block;
-    animation: settingmove 1s;
-    -webkit-animation: settingmove 1s;
-    animation-fill-mode:forwards;
-    -webkit-animation-fill-mode: forwards;
+    opacity: 1;
+    position: relative;
+    top:-70px;
+    left:-65px;
 }
 
 .at_plus:hover .signbutton{
     display: block;
-    animation: signmove 1s;
-    -webkit-animation: signmove 1s;
-    animation-fill-mode:forwards;
-    -webkit-animation-fill-mode: forwards;
+    opacity: 1;
+    position: relative;
+    top:-115px;
+    left:0px;
 }
 
 .at_plus .maskbutton{
-    display: none;
-
+    opacity: 0;
+    position: relative;
+    top:-35px;
+    left:-50px;
+    display: block;
 }
 
 .at_plus .historybutton{
-    display: none;
+    opacity: 0;
+    position: relative;
+    top:-80px;
+    left:-50px;
+    display: block;
 }
 
 .at_plus .messagebutton{
-    display: none;
+    opacity: 0;
+    position: relative;
+    top:-125px;
+    left:-55px;
+    display: block;
 }
 .at_plus .settingbutton{
-    display: none;
+    opacity: 0;
+    position: relative;
+    top:-170px;
+    left:-60px;
+    display: block;
 }
 
 .at_plus .signbutton{
-    display: none;
+    opacity: 0;
+    position: relative;
+    top:-210px;
+    left:-50px;
+    display: block;
 }
 
 
