@@ -170,23 +170,6 @@
 
 
 
-@keyframes infomoveback{
-    0%{
-        position: absolute;
-        top:-150px;
-        left:-40px;
-        transform: scale(1.0);
-    }
-    100%{ position: absolute;
-        top:-50px;
-        left:-40px;
-        transform: scale(0.2);  
-        display: none;  
-    }
-    
-}
-
-
 .info ul li{
     list-style: none;
 }
