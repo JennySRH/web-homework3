@@ -202,7 +202,7 @@
 
 #info-bar .page_user{
     position: relative;
-    top:-5px;
+    top:20px;
     left:-5px;
 
 }
@@ -217,7 +217,7 @@
 
 #info-bar .page_comment{
     position: relative;
-    top:-5px;
+    top:10px;
     left:-10px;
 }
 
@@ -232,7 +232,7 @@
 
 #info-bar .mine_posted{
     position: relative;
-    top:-5px;
+    top:10px;
     left:-19px;
 }
 
@@ -247,7 +247,7 @@
 
 #info-bar .mine_like{
     position: relative;
-    top:-35px;
+    top:-17px;
     left:24px;
 } 
 
@@ -277,4 +277,9 @@
     top:-100px;
     left:-40px;
 
+}
+
+#control-ring,#bottom-positioner,#control-ring{
+    height: 0%;
+    width: 0%;
 }
