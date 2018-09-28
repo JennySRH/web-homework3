@@ -29,10 +29,8 @@
     padding: 0%;
     display:inline-block;
     background-color: grey;
-
-
-    transition: all 1s ease 0.7s;
-    -webkit-transition: all 1s ease 0.7s;
+    transition: all 1s ease 0.8s;
+    -webkit-transition: all 1s ease 0.8s;
 
 }
 
@@ -143,16 +141,16 @@
 .at_plus .settingbutton{
     opacity: 0;
     position: relative;
-    top:-160px;
-    left:-50px;
+    top:-180px;
+    left:-55px;
     display: block;
 }
 
 .at_plus .signbutton{
     opacity: 0;
     position: relative;
-    top:-200px;
-    left:-40px;
+    top:-220px;
+    left:-45px;
     display: block;
 }
 
