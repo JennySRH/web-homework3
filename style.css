@@ -11,9 +11,11 @@
     height: 32px;
     margin: 0px;
     left:50%;
-    top: 80%;
+    top: 70%;
 
 }
+
+
 
 .at_plus_button{
     background-image:url('assets/images/atplus_white.png');
@@ -45,9 +47,6 @@
     background-color: rgba(48, 63, 159, 1);
     border-radius: 50%;
     display:inline-block;
-
-
-
     transition: all 1s ease 0.2s;
     -webkit-transition: all 1s ease 0.2s;
 }
@@ -272,7 +271,7 @@
 
 }
 
-#control-ring,#bottom-positioner,#control-ring{
+#control-ring-container,#bottom-positioner,#control-ring{
     height: 0%;
     width: 0%;
 }
