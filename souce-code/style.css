@@ -1,0 +1,254 @@
+*{
+    transition: all 0.8s ease 0.2s;
+}
+
+/*大布局定位*/
+html,body{
+    width:100%;
+    height:100%;
+    margin:0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+#at-plus-container{
+    position: relative;
+    width:180px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bottom-positioner{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+
+#info-bar{
+    opacity: 0;
+    transform: scale(0.3);
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    bottom: 50px;
+    left: 25px;
+    border-radius: 50%;
+    background-color: #7e7e7e;
+}
+
+#button:hover #info-bar{
+    opacity: 1;
+    transform: scale(1.0);
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    bottom: 150px;
+    left: 25px;
+    border-radius: 50%;
+    background-color: #7e7e7e;
+}
+
+#info-bar img{
+    transform: scale(1);
+}
+
+#info-bar li{
+    list-style: none;
+    font-weight: bold;
+
+}
+
+#info-bar li:nth-child(1) {
+    display: block;
+    margin-top: -7px;
+    margin-left:3px;
+}
+
+#info-bar li:nth-child(1) span{
+    display: block;
+    color:white;
+    margin-top: -25px;
+    margin-left:33px;
+}
+
+
+#info-bar li:nth-child(2) {
+    display: block;
+    margin-top: 15px;
+    margin-left:0px;
+}
+
+#info-bar li:nth-child(2) span{
+    display: block;
+    color:white;
+    font-size: 30px;
+    margin-top: -40px;
+    margin-left:35px;
+}
+
+#info-bar li:nth-child(3) {
+    display: block;
+    margin-top: 15px;
+    margin-left:-20px;
+}
+
+#info-bar li:nth-child(3) span{
+    display: block;
+    color:#079E6E;
+    margin-top: -28px;
+    margin-left:28px;
+}
+
+#info-bar li:nth-child(4) {
+    display: block;
+    margin-top: -22px;
+    margin-left:28px;
+}
+
+#info-bar li:nth-child(4) span{
+    display: block;
+    color:#079E6E;
+    margin-top: -28px;
+    margin-left:30px;
+}
+
+#control-ring-container{
+    position: absolute;
+    width:180px;
+    height: 180px;
+    bottom: 20px;
+    left: 0px;
+    border-radius: 50%;
+}
+
+#control-ring-container li{
+    list-style: none;
+    position: absolute;
+    display: block;
+    width:32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #7e7e7e;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+}
+
+#button #control-ring li:nth-child(1) {
+    opacity: 0;
+    margin-top: 60px;
+    margin-left: 30px;
+    background-image: url('assets/images/nomask.png');
+}
+
+#button:hover #control-ring li:nth-child(1) {
+    opacity: 1;
+    margin-top: 20px;
+    margin-left: -30px;
+    background-image: url('assets/images/nomask.png');
+}
+
+#button #control-ring li:nth-child(2) {
+    opacity: 0;
+    margin-top: 60px;
+    margin-left: 30px;
+    background-image: url('assets/images/history.png');
+}
+
+#button:hover #control-ring li:nth-child(2) {
+    opacity: 1;
+    margin-top: 60px;
+    margin-left: -40px;
+    background-image: url('assets/images/history.png');
+}
+
+#control-ring li:nth-child(3) {
+    opacity: 0;
+    margin-top: 60px;
+    margin-left: 30px;
+    background-image: url('assets/images/message.png');
+}
+
+#button:hover #control-ring li:nth-child(3) {
+    opacity: 1;
+    margin-top: 100px;
+    margin-left: -27px;
+    background-image: url('assets/images/message.png');
+}
+
+#control-ring li:nth-child(3) .unread{
+    position: absolute;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    width:20px;
+    height:20px;
+    margin:-6px 20px;
+    border-radius: 50%;
+    background-position: center;
+    background-color: #fb3834;
+}
+
+#control-ring li:nth-child(4) {
+    opacity: 0;
+    margin-top: 60px;
+    margin-left: 30px;
+    background-image: url('assets/images/setting.png');
+}
+
+#button:hover #control-ring li:nth-child(4) {
+    opacity: 1;
+    margin-top: 130px;
+    margin-left: 10px;
+    background-image: url('assets/images/setting.png');
+}
+
+#control-ring li:nth-child(5) {
+    opacity: 0;
+    margin-top: 60px;
+    margin-left: 30px;
+    background-image: url('assets/images/signin.png');
+}
+
+#button:hover #control-ring li:nth-child(5) {
+    opacity: 1;
+    margin-top: 128px;
+    margin-left: 56px;
+    background-image: url('assets/images/signin.png');
+}
+
+#button{
+    width:50px;
+    height: 50px;
+    margin: 85px 65px;
+}
+
+#button:hover .apb{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 85px;
+    left:65px;
+    border-radius: 50%;
+    background-image: url('assets/images/atplus_green.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px 30px;
+    background-color: #313aa1;
+}
+
+#button .apb{
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    bottom: 97px;
+    left:77px;
+    border-radius: 50%;
+    background-image: url('assets/images/atplus_white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 23.1px 16.5px;
+    background-color: #979cd3;
+}
